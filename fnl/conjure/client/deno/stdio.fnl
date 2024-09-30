@@ -21,7 +21,7 @@
                 :interrupt "ei"
                 :reset_repl "rr"
                 }
-      :command "deno --unstable"
+      :command "deno repl -A"
       :prompt_pattern "> "}}}})
 
 

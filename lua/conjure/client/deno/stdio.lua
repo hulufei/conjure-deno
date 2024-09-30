@@ -25,7 +25,7 @@ local buf_suffix = ".ts"
 _2amodule_2a["buf-suffix"] = buf_suffix
 local comment_prefix = "// "
 _2amodule_2a["comment-prefix"] = comment_prefix
-config.merge({client = {deno = {stdio = {mapping = {start = "cs", stop = "cS", interrupt = "ei", reset_repl = "rr"}, command = "deno --unstable", prompt_pattern = "> "}}}})
+config.merge({client = {deno = {stdio = {mapping = {start = "cs", stop = "cS", interrupt = "ei", reset_repl = "rr"}, command = "deno repl -A", prompt_pattern = "> "}}}})
 local cfg = config["get-in-fn"]({"client", "deno", "stdio"})
 do end (_2amodule_locals_2a)["cfg"] = cfg
 local state
